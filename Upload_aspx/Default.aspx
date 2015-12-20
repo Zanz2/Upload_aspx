@@ -4,7 +4,6 @@
 
     <div class="jumbotron">
         <h1>EZ Upload 2.0</h1>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
 
     <div class="row">
