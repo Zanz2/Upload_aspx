@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upload_aspx", "Upload_aspx\Upload_aspx.csproj", "{8014C3F3-A6FD-47C8-B46A-EE4F5CC68B5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{CC77D3F7-4596-40DC-87AD-3F2ED4EAFCDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{C344DE42-42C3-476D-BE54-5C7C44CF0618}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{82DD4617-222D-4CFB-88E2-4794F851ED35}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\Uploadaspx.json = PublishScripts\Templates\Uploadaspx.json
+		PublishScripts\Templates\Uploadaspx.param.dev.json = PublishScripts\Templates\Uploadaspx.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8014C3F3-A6FD-47C8-B46A-EE4F5CC68B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8014C3F3-A6FD-47C8-B46A-EE4F5CC68B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8014C3F3-A6FD-47C8-B46A-EE4F5CC68B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8014C3F3-A6FD-47C8-B46A-EE4F5CC68B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C344DE42-42C3-476D-BE54-5C7C44CF0618} = {CC77D3F7-4596-40DC-87AD-3F2ED4EAFCDE}
+		{82DD4617-222D-4CFB-88E2-4794F851ED35} = {CC77D3F7-4596-40DC-87AD-3F2ED4EAFCDE}
+	EndGlobalSection
+EndGlobal
