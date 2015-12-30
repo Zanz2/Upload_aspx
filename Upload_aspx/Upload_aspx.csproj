@@ -247,7 +247,6 @@
     <Content Include="index.aspx" />
     <None Include="Properties\PublishProfiles\Uploadaspx.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="index_masterpage.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
@@ -433,13 +432,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="index_masterpage.aspx.cs">
-      <DependentUpon>index_masterpage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="index_masterpage.aspx.designer.cs">
-      <DependentUpon>index_masterpage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
