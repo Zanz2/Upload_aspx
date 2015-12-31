@@ -65,11 +65,26 @@
         #Reset1 {
             width: 68px;
         }
+        .auto-style15 {
+            width: 227px;
+            text-align: right;
+            height: 32px;
+        }
+        .auto-style16 {
+            text-align: left;
+            width: 188px;
+            height: 32px;
+        }
+        .auto-style17 {
+            height: 32px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+        <div>
+            <h1>Registracija</h1>
+        </div>
     
         <table class="auto-style1">
             <tr>
@@ -82,11 +97,11 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style5">E-mail:</td>
-                <td class="auto-style10">
-                    <asp:TextBox ID="TextBoxEmail" runat="server" Width="180px"></asp:TextBox>
+                <td class="auto-style15">E-mail:</td>
+                <td class="auto-style16">
+                    <asp:TextBox ID="TextBoxEmail" runat="server" Width="180px" Height="22px"></asp:TextBox>
                 </td>
-                <td>
+                <td class="auto-style17">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Vstaviti morate pravilen e-naslov." ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </td>
@@ -130,7 +145,6 @@
             </tr>
         </table>
     
-    </div>
     </form>
 </body>
 </html>
