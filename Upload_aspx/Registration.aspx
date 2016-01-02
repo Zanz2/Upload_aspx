@@ -109,7 +109,7 @@
             <tr>
                 <td class="auto-style6">Geslo:</td>
                 <td class="auto-style9">
-                    <asp:TextBox ID="TextBoxPass" runat="server" TextMode="Password" Width="180px"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxPass" runat="server" TextMode="Password" Width="180px" OnTextChanged="TextBoxPass_TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style7">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxPass" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
