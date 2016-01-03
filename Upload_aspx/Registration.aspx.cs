@@ -16,14 +16,15 @@ namespace Upload_aspx
             {
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
                 conn.Open();
-                string checkuser = "select count(*) from UserData where UserName='"+ TextBoxUN.Text +"' ";
+                string checkuser = "select count(*) from UserData where UserName='"+ TextBoxUN.Text +"'";
                 SqlCommand com = new SqlCommand(checkuser, conn);
                 int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
-                if(temp==1)
-                {
-                    Response.Write("User already exists");
-                }
                 conn.Close();
+                if (temp==1)
+                {
+                    Response.Write("Uporabnik že obstaja");
+                }
+              
             }
         }
 

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="testnastran.aspx.cs" Inherits="Upload_aspx.testnastran" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Upload_aspx.testnastran" %>
 
 <!DOCTYPE html>
 

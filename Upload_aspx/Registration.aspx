@@ -83,7 +83,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1>Registracija</h1>
+            <h1 style="text-align: center">Registracija</h1>
         </div>
     
         <table class="auto-style1">
