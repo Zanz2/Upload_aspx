@@ -298,7 +298,7 @@
     <Content Include="staro\Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="index.aspx" />
-    <Content Include="staro\Users.aspx" />
+    <Content Include="Users.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -485,11 +485,11 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="staro\Users.aspx.cs">
+    <Compile Include="Users.aspx.cs">
       <DependentUpon>Users.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="staro\Users.aspx.designer.cs">
+    <Compile Include="Users.aspx.designer.cs">
       <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
