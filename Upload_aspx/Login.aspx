@@ -1,25 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Upload_aspx.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Upload_aspx.Login" MasterPageFile="~/MasterPage.master" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            width: 217px;
-        }
-        .auto-style3 {
-            width: 217px;
-            text-align: right;
-        }
-    </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+        <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> 
+        
+    
+   
+  
     <div>
     
        <h1 style="text-align: center">Prijava</h1> </div>
@@ -53,6 +39,5 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
-    </form>
-</body>
-</html>
+   
+</asp:Content>

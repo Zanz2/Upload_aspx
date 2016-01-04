@@ -1,87 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="Upload_aspx.Registration" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="Upload_aspx.Registration" MasterPageFile="~/MasterPage.master"%>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            width: 227px;
-        }
-        .auto-style3 {
-            width: 227px;
-            height: 22px;
-            text-align: right;
-        }
-        .auto-style4 {
-            height: 22px;
-            margin-left: 40px;
-        }
-        .auto-style5 {
-            width: 227px;
-            text-align: right;
-        }
-        .auto-style6 {
-            width: 227px;
-            text-align: right;
-            height: 30px;
-        }
-        .auto-style7 {
-            height: 30px;
-        }
-        .auto-style8 {
-            height: 22px;
-            text-align: left;
-            width: 188px;
-            margin-left: 40px;
-        }
-        .auto-style9 {
-            height: 30px;
-            text-align: left;
-            width: 188px;
-        }
-        .auto-style10 {
-            text-align: left;
-            width: 188px;
-        }
-        .auto-style11 {
-            width: 227px;
-            height: 24px;
-        }
-        .auto-style12 {
-            height: 24px;
-        }
-        .auto-style13 {
-            width: 188px;
-        }
-        .auto-style14 {
-            height: 24px;
-            width: 188px;
-        }
-        #Reset1 {
-            width: 68px;
-        }
-        .auto-style15 {
-            width: 227px;
-            text-align: right;
-            height: 32px;
-        }
-        .auto-style16 {
-            text-align: left;
-            width: 188px;
-            height: 32px;
-        }
-        .auto-style17 {
-            height: 32px;
-        }
-    </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+    <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> 
         <div>
             <h1 style="text-align: center">Registracija</h1>
         </div>
@@ -145,6 +65,5 @@
             </tr>
         </table>
     
-    </form>
-</body>
-</html>
+
+        </asp:Content>
