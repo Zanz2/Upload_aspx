@@ -34,7 +34,7 @@ namespace Upload_aspx
                 {
                     Session["New"] = TextBoxUserName.Text;
                     Response.Write("Geslo je pravilno");
-                    Response.Redirect("index.aspx");
+                    Response.Redirect("Users.aspx");
                 }
                 else
                 {
