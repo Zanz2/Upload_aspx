@@ -45,7 +45,7 @@ namespace Upload_aspx
                 com.Parameters.AddWithValue("@GUID", newGUID.ToString());
 
                 com.ExecuteNonQuery();
-                Response.Redirect("Manager.aspx");
+                Response.Redirect("Login1.aspx");
                 Response.Write("Registracija je uspešna");
                 conn.Close();
             }

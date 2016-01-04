@@ -16,14 +16,14 @@ namespace Upload_aspx
                 Label_welcome.Text += Session["New"].ToString();
             }
             else
-                Response.Redirect("Login.aspx");
+                Response.Redirect("Login1.aspx");
         }
        
 
         protected void B_Logout_Click(object sender, EventArgs e)
         {
             Session["New"] = null;
-            Response.Redirect("Login.aspx");
+            Response.Redirect("Login1.aspx");
         }
     }
 }

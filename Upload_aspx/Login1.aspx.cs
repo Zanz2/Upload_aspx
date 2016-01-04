@@ -43,7 +43,7 @@ namespace Upload_aspx
             }
             else
             {
-                Response.Write("Uporabnikško ime je nepravilno");
+                Response.Write("Uporabniško ime je nepravilno");
             }
         }
     }

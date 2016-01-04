@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Upload_aspx.Login"  MasterPageFile="~/MasterPage.master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login1.aspx.cs" Inherits="Upload_aspx.Login"  MasterPageFile="~/MasterPage.master" %>
 
- <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> 
+ <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> 
     <div>
     
        <h1 style="text-align: center">Prijava</h1> </div>
@@ -25,6 +25,7 @@
                 <td class="auto-style2">&nbsp;</td>
                 <td>
                     <asp:Button ID="Button_Login" runat="server" OnClick="Button_Login_Click" Text="Vpis" Width="90px" />
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Registration.aspx">Registracija</asp:HyperLink>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -34,3 +35,4 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
+      </asp:Content>
