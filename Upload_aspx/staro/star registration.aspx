@@ -1,7 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="Upload_aspx.Registration" MasterPageFile="~/MasterPage.master"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="star registration.aspx.cs" Inherits="Upload_aspx.Registration"  MasterPageFile="~/Site.master"%>
 
 
-    <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> 
+    <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server"> 
         <div>
             <h1 style="text-align: center">Registracija</h1>
         </div>
@@ -49,8 +49,8 @@
             <tr>
                 <td class="auto-style5">&nbsp;</td>
                 <td class="auto-style13">
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
-                    <input id="Reset1" type="reset" value="reset" /><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login1.aspx">Prijava</asp:HyperLink>
+                    <asp:Button ID="ButtonSubmit" runat="server" OnClick="Button1_Click" Text="Submit" />
+                    <input id="Reset1" type="reset" value="Reset" /><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login1.aspx">Prijava</asp:HyperLink>
                 </td>
                 <td>&nbsp;</td>
             </tr>

@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Configuration;
 using System.Data.SqlClient;
+using MySql.Data.Types;
+using MySql.Data.MySqlClient;
 namespace Upload_aspx
 {
     public partial class Registration : System.Web.UI.Page

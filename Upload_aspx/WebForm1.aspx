@@ -1,13 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Upload_aspx.WebForm11" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Upload_aspx.WebForm11" MasterPageFile="~/Site.master" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server"> 
         <div style=""font-family:Arial"">
         <asp:FileUpload ID="FileUpload1" runat="server" />
         <asp:Button ID="Button1" runat="server" Text="Upload" OnClick="Button1_Click" />
@@ -35,6 +28,4 @@
             <SortedDescendingHeaderStyle BackColor="#7E0000" />
         </asp:GridView>
         </div>
-    </form>
-</body>
-</html>
+    </asp:Content>

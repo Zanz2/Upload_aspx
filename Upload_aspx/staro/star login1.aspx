@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login1.aspx.cs" Inherits="Upload_aspx.Login"  MasterPageFile="~/MasterPage.master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="star login1.aspx.cs" Inherits="Upload_aspx.Login"   MasterPageFile="~/Site.master" %>
 
- <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> 
+ <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server"> 
     <div>
     
        <h1 style="text-align: center">Prijava</h1> </div>
