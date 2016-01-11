@@ -18,6 +18,12 @@ namespace Upload_aspx
 
         protected void Page_Init(object sender, EventArgs e)
         {
+            if (Session["username"] != null)
+            {
+                HyperLink1.Visible = true;
+            }
+            else
+            { HyperLink1.Visible = false; }
             // The code below helps to protect against XSRF attacks
             var requestCookie = Request.Cookies[AntiXsrfTokenKey];
             Guid requestCookieGuidValue;

@@ -316,6 +316,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <Content Include="bin\Upload_aspx.dll.config" />
     <Content Include="Login2.aspx" />
+    <Content Include="odjava.aspx" />
     <Content Include="Profil.aspx" />
     <Content Include="Registration2.aspx" />
     <Content Include="staro\About.aspx" />
@@ -377,7 +378,6 @@
     <Content Include="favicon.ico" />
     <Content Include="staro\Global.asax" />
     <Content Include="index.aspx" />
-    <Content Include="Users.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -402,6 +402,13 @@
     </Compile>
     <Compile Include="Login2.aspx.designer.cs">
       <DependentUpon>Login2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="odjava.aspx.cs">
+      <DependentUpon>odjava.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="odjava.aspx.designer.cs">
+      <DependentUpon>odjava.aspx</DependentUpon>
     </Compile>
     <Compile Include="Profil.aspx.cs">
       <DependentUpon>Profil.aspx</DependentUpon>
@@ -473,13 +480,6 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Users.aspx.cs">
-      <DependentUpon>Users.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Users.aspx.designer.cs">
-      <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

@@ -38,6 +38,8 @@
             </Scripts>
         </asp:ScriptManager>
 
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/odjava.aspx" Visible="False">Odjava</asp:HyperLink>
+
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
