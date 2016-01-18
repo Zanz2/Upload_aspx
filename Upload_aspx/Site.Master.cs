@@ -21,6 +21,9 @@ namespace Upload_aspx
             if (Session["username"] != null)
             {
                 HyperLink1.Visible = true;
+                HyperLink3.Visible = false;
+                HyperLink4.Visible = false;
+
             }
             else
             { HyperLink1.Visible = false; }
@@ -78,6 +81,11 @@ namespace Upload_aspx
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+        }
+
+        protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
+        {
+
         }
     }
 
