@@ -504,8 +504,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="assets\" />
     <Folder Include="Controllers\" />
     <Folder Include="Data\" />
+    <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registration2.aspx.cs" Inherits="Upload_aspx.Registration2" %>
 <asp:Content ID="Content8" ContentPlaceHolderID="MainContent" runat="server">
      <div>
-            <h1 style="text-align: center">Registracija</h1>
-        </div>
+            <h1 style="text-align: center">
     
         <table class="auto-style1">
             <tr>
@@ -17,7 +16,7 @@
             <tr>
                 <td class="auto-style15">E-mail:</td>
                 <td class="auto-style16">
-                    <asp:TextBox ID="TextBoxEmail" runat="server" Width="180px" Height="22px"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxEmail" runat="server" Width="179px" Height="49px"></asp:TextBox>
                 </td>
                 <td class="auto-style17">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -66,4 +65,7 @@
             </tr>
         </table>
 
-</asp:Content>
+                Registracija</h1>
+        </div>
+    
+        </asp:Content>
