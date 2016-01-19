@@ -2,7 +2,7 @@
 <asp:Content ID="Content8" ContentPlaceHolderID="MainContent" runat="server">
      <div>
             <h1 style="text-align: center">
-    
+    Registracija</h1>
         <table class="auto-style1">
             <tr>
                 <td class="auto-style5">Uporabniško ime:</td>
@@ -65,7 +65,7 @@
             </tr>
         </table>
 
-                Registracija</h1>
+                
         </div>
     
         </asp:Content>
