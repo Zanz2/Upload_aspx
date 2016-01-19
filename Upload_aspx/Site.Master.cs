@@ -23,7 +23,8 @@ namespace Upload_aspx
                 HyperLink1.Visible = true;
                 HyperLink3.Visible = false;
                 HyperLink4.Visible = false;
-
+                HyperLink5.Visible = true;
+                HyperLink6.Visible = true;
             }
             else
             { HyperLink1.Visible = false; }

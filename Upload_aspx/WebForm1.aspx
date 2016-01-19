@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Upload_aspx.WebForm11" MasterPageFile="~/Site.master" %>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server"> 
-        <div style=""font-family:Arial"">
+        <div style="font-family:Arial">
         <asp:FileUpload ID="FileUpload1" runat="server" />
         <asp:Button ID="Button1" runat="server" Text="Upload" OnClick="Button1_Click" />
     <div>

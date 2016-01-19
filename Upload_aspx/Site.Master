@@ -42,9 +42,10 @@
 									<li>
 										<a href="#">Meni</a>
 										<ul>
+                                            <li><a href="index.aspx">Domov</a></li>
 											<li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/odjava.aspx" Visible="False">Odjava</asp:HyperLink></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam dolore nisl</a></li>
+											<li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/WebForm1.aspx" Visible="False">Upload</asp:HyperLink></li>
+											<li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Profil.aspx" Visible="False">Profil</asp:HyperLink></li>
 											
 											
 										</ul>
@@ -66,6 +67,9 @@
 				<div class="wrapper">
 					<div class="container" id="main">
 <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            
+            
+            
             </asp:ContentPlaceHolder>
 						<!-- Content -->
 						
