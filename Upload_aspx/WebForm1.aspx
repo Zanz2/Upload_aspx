@@ -3,15 +3,16 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server"> 
         <div style="font-family:Arial">
         <asp:FileUpload ID="FileUpload1" runat="server" />
-        <asp:Button ID="Button1" runat="server" Text="Upload" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" Text="Upload/Pokaži seznam" OnClick="Button1_Click" />
     <div>
-    
+    <asp:Label ID="Label1" runat="server" Text="Label" Visible="False"></asp:Label>
     </div>
-        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" AutoGenerateColumns="False">
+            
+        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>
                 <asp:TemplateField HeaderText="Datoteka">
                     <ItemTemplate>
-                        <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%# Eval("File") %>' CommandName="Naloži" Text='<%# Eval("File") %>'></asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%# Eval("File") %>' CommandName="Download" Text='<%# Eval("File") %>'></asp:LinkButton>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:BoundField DataField="Size" HeaderText="Velikost v bitih" />
@@ -27,5 +28,6 @@
             <SortedDescendingCellStyle BackColor="#F6F0C0" />
             <SortedDescendingHeaderStyle BackColor="#7E0000" />
         </asp:GridView>
+            
         </div>
     </asp:Content>

@@ -17,26 +17,62 @@ namespace Upload_aspx
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if(FileUpload1.HasFile)
+            string mapa = (Path.Combine(HttpContext.Current.Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/")));
+            //  + Session["user_id"].ToString() + "/"
+            // string userid = (string)(Session["user_id"]);
+            if (!Directory.Exists(mapa))
             {
-                FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Data/") + FileUpload1.FileName);
+                Directory.CreateDirectory(mapa);
             }
-
-            DataTable dt = new DataTable();
-            dt.Columns.Add("File", typeof(string));
-            dt.Columns.Add("Size", typeof(string));
-            dt.Columns.Add("Type", typeof(string));
-
-            foreach (string strFile in Directory.GetFiles(Server.MapPath("~/Data")))
+            if (FileUpload1.HasFile)
             {
-                FileInfo fi = new FileInfo(strFile);
-                dt.Rows.Add(fi.Name, fi.Length, fi.Extension);
-
+              
+                if (Convert.ToInt64(FileUpload1.PostedFile.ContentLength) < 10000000)
+                {
+                    FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/") + FileUpload1.FileName);
+                }
+                else
+                {
+                    Label1.Visible = true;
+                    Label1.Text = "Datoteka mora biti manjša od 9 MB";
+                   
+                }
             }
-            GridView1.DataSource = dt;
-            GridView1.DataBind();
-
             
+                Label1.Visible = false;
+                DataTable dt = new DataTable();
+                dt.Columns.Add("File", typeof(string));
+                dt.Columns.Add("Size", typeof(string));
+                dt.Columns.Add("Type", typeof(string));
+
+                foreach (string strFile in Directory.GetFiles(Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/")))
+                {
+                    FileInfo fi = new FileInfo(strFile);
+                    dt.Rows.Add(fi.Name, fi.Length, fi.Extension);
+
+                }
+                GridView1.DataSource = dt;
+                GridView1.DataBind();
+            
+            
+
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if(e.CommandName == "Download")
+            {
+                Response.Clear();
+                Response.ContentType = "application/octet-stream";
+                Response.AppendHeader("content-disposition", "filename=" + e.CommandArgument);
+                Response.TransmitFile(Server.MapPath("~/Content/") + e.CommandArgument);
+                Response.End();
+            }
         }
     }
 }

@@ -379,7 +379,9 @@
     <Content Include="staro\Global.asax" />
     <Content Include="index.aspx" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
@@ -506,7 +508,6 @@
   <ItemGroup>
     <Folder Include="assets\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Data\" />
     <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>
