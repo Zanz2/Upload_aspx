@@ -11,7 +11,9 @@ namespace Upload_aspx
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
+                Response.Redirect("index.aspx");
+           
         }
     }
 }

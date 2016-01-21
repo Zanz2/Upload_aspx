@@ -335,7 +335,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Manager.aspx" />
     <Content Include="WebForm1.aspx" />
     <None Include="Properties\PublishProfiles\EZUPLOADv2 - Web Deploy.pubxml" />
     <None Include="Properties\Settings.settings">
@@ -489,13 +488,6 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Manager.aspx.cs">
-      <DependentUpon>Manager.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Manager.aspx.designer.cs">
-      <DependentUpon>Manager.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

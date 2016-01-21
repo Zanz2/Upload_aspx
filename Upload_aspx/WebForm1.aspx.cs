@@ -12,7 +12,10 @@ namespace Upload_aspx
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["username"] == null)
+            {
+                Response.Redirect("index.aspx");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
