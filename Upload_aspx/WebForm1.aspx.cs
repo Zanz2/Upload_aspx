@@ -26,35 +26,41 @@ namespace Upload_aspx
             }
             if (FileUpload1.HasFile)
             {
-              
-                if (Convert.ToInt64(FileUpload1.PostedFile.ContentLength) < 10000000)
+
+                if ((Convert.ToInt64(FileUpload1.PostedFile.ContentLength) < 8500000) == false)
                 {
-                    FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/") + FileUpload1.FileName);
+                    Label1.Visible = true;
+                    Label1.Text = "Datoteka mora biti manjša od 8 MB";
+
                 }
                 else
                 {
-                    Label1.Visible = true;
-                    Label1.Text = "Datoteka mora biti manjša od 9 MB";
-                   
-                }
-            }
-            
-                Label1.Visible = false;
-                DataTable dt = new DataTable();
-                dt.Columns.Add("File", typeof(string));
-                dt.Columns.Add("Size", typeof(string));
-                dt.Columns.Add("Type", typeof(string));
+                    if ((File.Exists(Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/") + FileUpload1.PostedFile.FileName)) == true)
+                    {
+                        Label1.Visible = true;
+                        Label1.Text = "Datoteka z istim imenom že obstaja";
+                    }
+                    else
+                    {
+                        FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/") + FileUpload1.FileName);
 
-                foreach (string strFile in Directory.GetFiles(Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/")))
-                {
-                    FileInfo fi = new FileInfo(strFile);
-                    dt.Rows.Add(fi.Name, fi.Length, fi.Extension);
+                        Label1.Visible = false;
+                        DataTable dt = new DataTable();
+                        dt.Columns.Add("File", typeof(string));
+                        dt.Columns.Add("Size", typeof(string));
+                        dt.Columns.Add("Type", typeof(string));
 
+                        foreach (string strFile in Directory.GetFiles(Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/")))
+                        {
+                            FileInfo fi = new FileInfo(strFile);
+                            dt.Rows.Add(fi.Name, fi.Length, fi.Extension);
+
+                        }
+                        GridView1.DataSource = dt;
+                        GridView1.DataBind();
+                    }
                 }
-                GridView1.DataSource = dt;
-                GridView1.DataBind();
-            
-            
+               }
 
         }
 
@@ -70,9 +76,34 @@ namespace Upload_aspx
                 Response.Clear();
                 Response.ContentType = "application/octet-stream";
                 Response.AppendHeader("content-disposition", "filename=" + e.CommandArgument);
-                Response.TransmitFile(Server.MapPath("~/Content/") + e.CommandArgument);
+                Response.TransmitFile(Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/") + e.CommandArgument);
                 Response.End();
             }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            string mapa = (Path.Combine(HttpContext.Current.Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/")));
+            //  + Session["user_id"].ToString() + "/"
+            // string userid = (string)(Session["user_id"]);
+            if (!Directory.Exists(mapa))
+            {
+                Directory.CreateDirectory(mapa);
+            }
+            Label1.Visible = false;
+            DataTable dt = new DataTable();
+            dt.Columns.Add("File", typeof(string));
+            dt.Columns.Add("Size", typeof(string));
+            dt.Columns.Add("Type", typeof(string));
+
+            foreach (string strFile in Directory.GetFiles(Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/")))
+            {
+                FileInfo fi = new FileInfo(strFile);
+                dt.Rows.Add(fi.Name, fi.Length, fi.Extension);
+
+            }
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
         }
     }
 }

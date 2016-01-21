@@ -13,13 +13,13 @@ namespace Upload_aspx {
     public partial class SiteMaster {
         
         /// <summary>
-        /// HyperLink1 control.
+        /// HyperLink6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink6;
         
         /// <summary>
         /// HyperLink5 control.
@@ -31,13 +31,13 @@ namespace Upload_aspx {
         protected global::System.Web.UI.WebControls.HyperLink HyperLink5;
         
         /// <summary>
-        /// HyperLink6 control.
+        /// HyperLink1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink6;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
         
         /// <summary>
         /// HyperLink3 control.

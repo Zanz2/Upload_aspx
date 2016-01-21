@@ -36,26 +36,35 @@
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
-									<li></li>
-                                    <li></li>
-                                    <li></li>
+									<li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Profil.aspx" Visible="False">Profil</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/WebForm1.aspx" Visible="False">Upload</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/odjava.aspx" Visible="False">Odjava</asp:HyperLink></li>
 									<li>
-										<a href="#">Meni</a>
+                                        <!--
+									<a href="#">Meni</a>
 										<ul>
-                                            <li><a href="index.aspx">Domov</a></li>
-											<li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/odjava.aspx" Visible="False">Odjava</asp:HyperLink></li>
-											<li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/WebForm1.aspx" Visible="False">Upload</asp:HyperLink></li>
-											<li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Profil.aspx" Visible="False">Profil</asp:HyperLink></li>
+                                            <li></li>
+											<li></li>
+											<li></li>
+											<li></li>
 											
 											
 										</ul>
+                                       -->
 									</li>
 									<li></li>
 									<li class="break"></li>
 									<li></li>
                                     <li></li>
-                                    <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Registration2.aspx">Registracija</asp:HyperLink></li>
                                     <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Registration2.aspx">Registracija</asp:HyperLink></li>
+                                    <li><a href="index.aspx">Domov</a></li>
 									<li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Login2.aspx">Login</asp:HyperLink></li>
 								</ul>
 							</nav>

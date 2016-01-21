@@ -3,7 +3,8 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server"> 
         <div style="font-family:Arial">
         <asp:FileUpload ID="FileUpload1" runat="server" />
-        <asp:Button ID="Button1" runat="server" Text="Upload/Pokaži seznam" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" Text="Upload (največ 8 MB)" OnClick="Button1_Click" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Prikaži seznam" />
     <div>
     <asp:Label ID="Label1" runat="server" Text="Label" Visible="False"></asp:Label>
     </div>
