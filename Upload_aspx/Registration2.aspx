@@ -47,8 +47,7 @@
                 <td class="auto-style5">&nbsp;</td>
                 <td class="auto-style13">
                     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
-                    <input id="Reset1" type="reset" value="Reset" /><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login2.aspx">Prijava</asp:HyperLink>
-                </td>
+                    <input id="Reset1" type="reset" value="Reset" /></td>
                 <td>
                     <asp:Label ID="Label1" runat="server" Text="Label" Visible="False"></asp:Label>
                 </td>

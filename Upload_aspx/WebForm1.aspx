@@ -18,6 +18,11 @@
                 </asp:TemplateField>
                 <asp:BoundField DataField="Size" HeaderText="Velikost v bitih" />
                 <asp:BoundField DataField="Type" HeaderText="Tip datoteke" />
+                <asp:TemplateField HeaderText="Izbris">
+                    <ItemTemplate>
+                        <asp:LinkButton ID="LinkButton2" runat="server" CommandArgument='<%# Eval("File") %>' CommandName="Izbris" Text="Izbris"></asp:LinkButton>
+                    </ItemTemplate>
+                </asp:TemplateField>
             </Columns>
             <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
             <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />

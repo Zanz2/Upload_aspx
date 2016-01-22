@@ -82,6 +82,26 @@ namespace Upload_aspx
                 Response.TransmitFile(Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/") + e.CommandArgument);
                 Response.End();
             }
+            if (e.CommandName == "Izbris")
+            {
+                
+                File.Delete(Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/") + e.CommandArgument);
+                Label1.Visible = false;
+                DataTable dt = new DataTable();
+                dt.Columns.Add("File", typeof(string));
+                dt.Columns.Add("Size", typeof(string));
+                dt.Columns.Add("Type", typeof(string));
+
+                foreach (string strFile in Directory.GetFiles(Server.MapPath("~/Content/" + Session["user_id"].ToString() + "/")))
+                {
+                    FileInfo fi = new FileInfo(strFile);
+                    dt.Rows.Add(fi.Name, fi.Length, fi.Extension);
+
+                }
+                GridView1.DataSource = dt;
+                GridView1.DataBind();
+
+            }
         }
 
         protected void Button2_Click(object sender, EventArgs e)

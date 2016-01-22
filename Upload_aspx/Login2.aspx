@@ -24,7 +24,6 @@
                 <td class="auto-style2">&nbsp;</td>
                 <td>
                     <asp:Button ID="Button_Login" runat="server" OnClick="Button_Login_Click" Text="Vpis" Width="90px" />
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Registration2.aspx">Registracija</asp:HyperLink>
                 </td>
                 <td>&nbsp;</td>
             </tr>
