@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server"> 
     <div>
    <h1>Pozdravljeni</h1><br />
-        <h3>Za gostovanje datotek se prosim prijavite.</h3>
+        <h3>Za gostovanje datotek se prosim prijavite, če ste že prijavljeni lahko pod upload stranjo uploadate datoteke.</h3>
     </div>
    
      </asp:Content>

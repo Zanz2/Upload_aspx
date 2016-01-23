@@ -91,7 +91,7 @@ namespace Upload_aspx
 
                 if (id == "lmao")
                 {
-                    message = "Incorrect username or password";
+                    message = "Napačno ime ali geslo";
                 }
                 else
                 {

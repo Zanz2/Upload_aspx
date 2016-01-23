@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registration2.aspx.cs" Inherits="Upload_aspx.Registration2" %>
-<asp:Content ID="Content8" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
      <div>
             <h1 style="text-align: center">
     Registracija</h1>
