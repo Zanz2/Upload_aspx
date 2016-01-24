@@ -113,7 +113,7 @@ namespace Upload_aspx
 
             using (MySqlConnection con = new MySqlConnection(constr))
             {
-                using (MySqlCommand cmd = new MySqlCommand("insert_user"))
+                using (MySqlCommand cmd = new MySqlCommand("change_pass"))
                 {
                     using (MySqlDataAdapter sda = new MySqlDataAdapter())
                     {
@@ -133,12 +133,12 @@ namespace Upload_aspx
 
                 if (id == -1)
                 {
-                    message = "Uporabnik že obstaja";
+                    message = "Napačno geslo";
                 }
                 else
                 {
-                    message = "Registracija uspešna <a href=login2.aspx>Vpis</a>";
-                    Response.Redirect("Login2.aspx");
+                    message = "Sprememba uspešna";
+                   
                 }
                 Label2.Visible = true;
                 Label2.Text = message;
