@@ -8,18 +8,18 @@
                 <td class="auto-style3" style="height: 57px; width: 98px">&nbsp;</td>
                 <td style="width: 234px; height: 57px;">
                     Email<asp:TextBox ID="TextBoxEmail" runat="server" Width="180px"></asp:TextBox>
-                    
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Prosim vnesite email" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                 </td>
-                <td style="height: 57px">&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Prosim vnesite email" ForeColor="#FF3300"></asp:RequiredFieldValidator></td>
+                <td style="height: 57px">&nbsp;</td>
               
             </tr>
             <tr>
                 <td class="auto-style3" style="height: 57px; width: 98px">&nbsp;</td>
                 <td style="width: 234px; height: 57px;">
                     Geslo<asp:TextBox ID="TextBoxPassword" runat="server" TextMode="Password" Width="180px" style="margin-top: 8px"></asp:TextBox>
-                    
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxPassword" ErrorMessage="Prosim vnesite geslo" ForeColor="#FF3300"></asp:RequiredFieldValidator>
                 </td>
-                <td style="height: 57px">&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxPassword" ErrorMessage="Prosim vnesite geslo" ForeColor="#FF3300"></asp:RequiredFieldValidator></td>
+                <td style="height: 57px">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2" style="width: 98px; height: 20px"></td>

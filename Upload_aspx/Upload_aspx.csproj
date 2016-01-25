@@ -346,10 +346,6 @@
     <Content Include="odjava.aspx" />
     <Content Include="Profil.aspx" />
     <Content Include="Registration2.aspx" />
-    <Content Include="App_Data\Registration.mdf" />
-    <Content Include="App_Data\Registration_log.ldf">
-      <DependentUpon>Registration.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -362,12 +358,6 @@
     </Content>
     <Content Include="WebForm1.aspx" />
     <Content Include="images\Thumbs.db" />
-    <Content Include="assets\.sass-cache\19ac3b9ef4a2d2f7d3b82ad6948e438c6af2350b\main.scssc" />
-    <Content Include="assets\.sass-cache\3dac0be4b501e8f742aed310bccfe864a63c9d46\_functions.scssc" />
-    <Content Include="assets\.sass-cache\3dac0be4b501e8f742aed310bccfe864a63c9d46\_mixins.scssc" />
-    <Content Include="assets\.sass-cache\3dac0be4b501e8f742aed310bccfe864a63c9d46\_skel.scssc" />
-    <Content Include="assets\.sass-cache\3dac0be4b501e8f742aed310bccfe864a63c9d46\_vars.scssc" />
-    <Content Include="assets\.sass-cache\e6600a574971ac77fa853a577b8effb1d2e96e89\v8.scssc" />
     <Content Include="assets\fonts\fontawesome-webfont.eot" />
     <Content Include="assets\fonts\fontawesome-webfont.ttf" />
     <Content Include="assets\fonts\fontawesome-webfont.woff" />
@@ -380,7 +370,10 @@
     <Content Include="assets\sass\libs\_skel.scss" />
     <Content Include="assets\sass\libs\_vars.scss" />
     <Content Include="assets\sass\main.scss" />
+    <None Include="Properties\PublishProfiles\EZUPLOADv2 - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\EZUPLOADv2 - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\EZUPLOADv2 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\uploadaspxv2 - Web Deploy.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -516,6 +509,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="staro\" />
   </ItemGroup>

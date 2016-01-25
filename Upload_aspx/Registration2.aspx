@@ -7,39 +7,40 @@
             <tr>
                 <td class="auto-style5" style="width: 160px">&nbsp;</td>
                 <td class="auto-style10" style="width: 336px">
-                    Uporabniško ime:<asp:TextBox ID="TextBoxUN" runat="server" Width="180px"></asp:TextBox>
+                    Uporabniško ime:<asp:TextBox ID="TextBoxUN" runat="server" Width="180px"></asp:TextBox> 
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxUN" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxUN" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
+                   
                 </td>
             </tr>
             <tr>
                 <td class="auto-style15" style="height: 57px; width: 160px;">&nbsp;</td>
                 <td class="auto-style16" style="width: 336px; height: 57px">
                     E-mail:<asp:TextBox ID="TextBoxEmail" runat="server" Width="179px" Height="57px" style="margin-top: 8px"></asp:TextBox>
-                </td>
+                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Vstaviti morate pravilen e-naslov." ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator></td>
                 <td class="auto-style17" style="height: 57px">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Vstaviti morate pravilen e-naslov." ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                   
                 </td>
             </tr>
             <tr>
                 <td class="auto-style6" style="height: 57px; width: 160px;">&nbsp;</td>
                 <td class="auto-style9" style="width: 336px; height: 57px">
                     Geslo:<asp:TextBox ID="TextBoxPass" runat="server" TextMode="Password" Width="180px" style="margin-top: 8px"></asp:TextBox>
-                </td>
+                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxPass" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator></td>
                 <td class="auto-style7" style="height: 57px">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxPass" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
+                   
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3" style="height: 57px; width: 160px;">&nbsp;</td>
                 <td class="auto-style8" style="width: 336px; height: 57px">
                     Potrdi geslo:<asp:TextBox ID="TextBoxRPass" runat="server" TextMode="Password" Width="180px" ValidateRequestMode="Enabled" ViewStateMode="Disabled" style="margin-top: 8px"></asp:TextBox>
-                </td>
+                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBoxRPass" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBoxPass" ControlToValidate="TextBoxRPass" ErrorMessage="Gesli se morata ujemati!" ForeColor="Red"></asp:CompareValidator></td>
                 <td class="auto-style4" style="height: 57px">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBoxRPass" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
-                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBoxPass" ControlToValidate="TextBoxRPass" ErrorMessage="Gesli se morata ujemati!" ForeColor="Red"></asp:CompareValidator>
+                   
                     <br />
                 </td>
             </tr>
