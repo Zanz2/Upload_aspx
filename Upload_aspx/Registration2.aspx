@@ -5,18 +5,18 @@
                 &nbsp;</h1>
         <table class="auto-style1">
             <tr>
-                <td class="auto-style5" style="width: 160px">Uporabniško ime:</td>
+                <td class="auto-style5" style="width: 160px">&nbsp;</td>
                 <td class="auto-style10" style="width: 336px">
-                    <asp:TextBox ID="TextBoxUN" runat="server" Width="180px"></asp:TextBox>
+                    Uporabniško ime:<asp:TextBox ID="TextBoxUN" runat="server" Width="180px"></asp:TextBox>
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxUN" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style15" style="height: 57px; width: 160px;">E-mail:</td>
+                <td class="auto-style15" style="height: 57px; width: 160px;">&nbsp;</td>
                 <td class="auto-style16" style="width: 336px; height: 57px">
-                    <asp:TextBox ID="TextBoxEmail" runat="server" Width="179px" Height="57px" style="margin-top: 8px"></asp:TextBox>
+                    E-mail:<asp:TextBox ID="TextBoxEmail" runat="server" Width="179px" Height="57px" style="margin-top: 8px"></asp:TextBox>
                 </td>
                 <td class="auto-style17" style="height: 57px">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -24,18 +24,18 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style6" style="height: 57px; width: 160px;">Geslo:</td>
+                <td class="auto-style6" style="height: 57px; width: 160px;">&nbsp;</td>
                 <td class="auto-style9" style="width: 336px; height: 57px">
-                    <asp:TextBox ID="TextBoxPass" runat="server" TextMode="Password" Width="180px" style="margin-top: 8px"></asp:TextBox>
+                    Geslo:<asp:TextBox ID="TextBoxPass" runat="server" TextMode="Password" Width="180px" style="margin-top: 8px"></asp:TextBox>
                 </td>
                 <td class="auto-style7" style="height: 57px">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxPass" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3" style="height: 57px; width: 160px;">Potrdi geslo:</td>
+                <td class="auto-style3" style="height: 57px; width: 160px;">&nbsp;</td>
                 <td class="auto-style8" style="width: 336px; height: 57px">
-                    <asp:TextBox ID="TextBoxRPass" runat="server" TextMode="Password" Width="180px" ValidateRequestMode="Enabled" ViewStateMode="Disabled" style="margin-top: 8px"></asp:TextBox>
+                    Potrdi geslo:<asp:TextBox ID="TextBoxRPass" runat="server" TextMode="Password" Width="180px" ValidateRequestMode="Enabled" ViewStateMode="Disabled" style="margin-top: 8px"></asp:TextBox>
                 </td>
                 <td class="auto-style4" style="height: 57px">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBoxRPass" ErrorMessage="Obvezno polje!" ForeColor="Red"></asp:RequiredFieldValidator>
