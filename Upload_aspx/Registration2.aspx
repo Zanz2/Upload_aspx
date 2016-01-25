@@ -46,8 +46,8 @@
             <tr>
                 <td class="auto-style5" style="width: 160px">&nbsp;</td>
                 <td class="auto-style13" style="width: 336px">
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" style="margin-top: 8px" />
-                    <input id="Reset1" type="reset" value="Reset" style="margin-left: 12px" /></td>
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" style="margin-top: 8px" Width="159px" />
+                    <input id="Reset1" type="reset" value="Reset" style="margin-left: 12px; margin-top: 8px;" /></td>
                 <td>
                     <asp:Label ID="Label1" runat="server" Text="Label" Visible="False"></asp:Label>
                 </td>

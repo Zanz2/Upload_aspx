@@ -30,7 +30,7 @@
             <tr>
                 <td class="auto-style2" style="height: 33px; width: 98px"></td>
                 <td style="width: 234px; height: 33px;">
-                    <asp:Button ID="Button_Login" runat="server" OnClick="Button_Login_Click" Text="Vpis" Width="90px" Height="59px" />
+                    <asp:Button ID="Button_Login" runat="server" OnClick="Button_Login_Click" Text="Vpis" Width="91px" Height="59px" />
                     <asp:Label ID="Label1" runat="server" Text="Label" Visible="False"></asp:Label>
                 </td>
                 <td style="height: 33px"></td>

@@ -61,7 +61,7 @@
         <tr>
             <td style="width: 160px; height: 66px;"></td>
             <td style="width: 343px; height: 66px;">
-                <asp:Button ID="Button2" runat="server" Text="Spremeni" OnClick="Button2_Click" ValidationGroup="Sprememba" Height="56px" Width="185px"/>
+                <asp:Button ID="Button2" runat="server" Text="Spremeni" OnClick="Button2_Click" ValidationGroup="Sprememba" Height="56px" Width="183px"/>
                 <asp:Label ID="Label2" runat="server" Text="Label" Visible="False"></asp:Label>
             </td>
             <td style="height: 66px"></td>
